@@ -38,4 +38,4 @@ image::resim3.png[Giriş,width=25%]
 Üç durum söz konusu olabilir: 
 
 image::resimpng4.png[Giriş,width=50%]
-Çok boyutlu bir fonksiyonun optimuma ulaşıp ulaşmadığını anlamak için bir yol sunmasının yanında *Hessian'ın* optimizasyonda başka kullanım alanları da vardır. 
+Çok boyutlu bir fonksiyonun optimuma ulaşıp ulaşmadığını anlamak için bir yol sunmasının yanında *Hessian'ın* optimizasyonda başka kullanım alanları da vardır  . 
