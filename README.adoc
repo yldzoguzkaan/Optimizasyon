@@ -41,6 +41,7 @@ image::resimpng4.png[Giriş,width=50%]
 Çok boyutlu bir fonksiyonun optimuma ulaşıp ulaşmadığını anlamak için bir yol sunmasının yanında *Hessian'ın* optimizasyonda başka kullanım alanları da vardır. + 
 *Örnek 1* +
 (4,2) noktasında basınç gradyeni yönünde bir boyutlu bir denklem geliştirin.Basınç fonksiyonu f(x,y)=5*x^2*y-8*y^2-7*x^2 şeklinde verilmiştir. +
+-------------------------------------------------
 from sympy import * +
 import math +
 x=Symbol('x') +
@@ -49,3 +50,4 @@ xi=4    #x degeri +
 yi=2    #y degeri +
 denklem=5*x**2*y-8*y**2-7*x**2 +
 print "Denklem:"+denklem.diff(x).subs(x,xi).subs(y,yi).__str__()+"cos T + " +denklem.diff(y).subs(x,xi).subs(y,yi).__str__() +"sin T" +
+--------------------------------------------------
