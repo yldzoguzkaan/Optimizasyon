@@ -40,7 +40,7 @@ image::resim3.png[Giriş,width=25%]
 image::resimpng4.png[Giriş,width=50%]
 Çok boyutlu bir fonksiyonun optimuma ulaşıp ulaşmadığını anlamak için bir yol sunmasının yanında *Hessian'ın* optimizasyonda başka kullanım alanları da vardır. + 
 *Örnek 1* +
-(4,2) noktasında basınç gradyeni yönünde bir boyutlu bir denklem geliştirin.Basınç fonksiyonu f(x,y)=5*x^2*y-8*y^2-7*x^2 şeklinde verilmiştir. +
+(4,2) noktasında basınç gradyeni yönünde bir boyutlu bir denklem geliştirin.Basınç fonksiyonu f(x,y)=(5*x^2)*(y-8*y^2)-(7*x^2) şeklinde verilmiştir. +
 *NOT:PYTHON DİLİYLE YAZILMIŞTIR. VERSİON:2.7*
 -------------------------------------------------
 from sympy import *
