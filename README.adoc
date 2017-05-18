@@ -53,8 +53,7 @@ denklem=5*x**2*y-8*y**2-7*x**2
 print "Denklem:"+denklem.diff(x).subs(x,xi).subs(y,yi).__str__()+"cos T + " +denklem.diff(y).subs(x,xi).subs(y,yi).__str__() +"sin T"
 -------------------------------------------------
 *ÇIKTI* +
-Denklem:24cos T + 48sin T
--------------------------------------------------
+Denklem:24cos T + 48sin T +
 *Örnek 2* +
 (1,1) noktasında sıcaklık gradyeni yönünde bir boyutlu denklem geliştiriniz.Bir sıcaklık fonksiyonu f(x,y)=2*x^3*y^2-6*x*y+x^2+4*y şeklinde verilmiştir. +
 *NOT:PYTHON DİLİYLE YAZILMIŞTIR. VERSİON:2.7*
