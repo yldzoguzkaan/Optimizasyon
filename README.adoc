@@ -105,6 +105,7 @@ while i<=9:
     print "     "+i.__str__()+"             "+tahmin.__str__()+"      "+denklem.subs(x,tahmin).__str__()
     tahmin = tahmin - (birinciTurev.subs(x, tahmin)) / (ikinciTurev.subs(x, tahmin))
     i=i+1
+--------------------------------------------
 *ÇIKTI* +
 Tahmin Sayisi:    	Tahmin Degeri:   	Fonksiyon Aldigi Deger:  
      1             		2.49508155133      	0.582267351471577
