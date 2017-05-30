@@ -71,3 +71,20 @@ print "Denklem:" + denklem.diff(x).subs(x, xi).subs(y, yi).__str__() + "cos T + 
 -------------------------------------------------
 *ÇIKTI* +
 Denklem:2cos T + 2sin T
+
+
+== *NEWTON YÖNTEMLERİ* +
+*Gradyensiz Newton Yöntemi* +
+Gradyensiz Newton Yöntemi f(x)=0 olacak şekilde bir fonksiyonun kökünü bulan açık bir yöntemdir. Ve,
+
+image::1.png[Giriş,width=15%]
+
+İfadesiyle özetlenir.
+   g(x)=f’(x) şeklinde yeni bir fonksiyon tanımlayarak f(x)’in optimumunu bulmak için benzer bir açık yaklaşım kullanılabilir. Böylece, aynı optimum değer x*, her iki fonksiyonu da sağlayacaktır.
+   f’(x*)=g(x*)=0
+Dolayısıyla,
+
+image::2.png[Giriş,width=15%]
+
+İfadesi f(x)’in maksimum ve minimumunu bulmak için bir teknik olarak kullanılabilir. Aynı denklem, f(x) için ikinci derece Taylor serisi yazılarak ve serinin türevi sıfıra eşitlenerek de elde edilebilir. 
+
