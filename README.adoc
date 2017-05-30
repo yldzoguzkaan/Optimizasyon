@@ -79,12 +79,42 @@ Gradyensiz Newton Yöntemi f(x)=0 olacak şekilde bir fonksiyonun kökünü bula
 
 image::1.png[Giriş,width=15%]
 
-İfadesiyle özetlenir.
-   g(x)=f’(x) şeklinde yeni bir fonksiyon tanımlayarak f(x)’in optimumunu bulmak için benzer bir açık yaklaşım kullanılabilir. Böylece, aynı optimum değer x*, her iki fonksiyonu da sağlayacaktır.
-   f’(x*)=g(x*)=0
+İfadesiyle özetlenir. +
+   g(x)=f’(x) şeklinde yeni bir fonksiyon tanımlayarak f(x)’in optimumunu bulmak için benzer bir açık yaklaşım kullanılabilir. Böylece, aynı optimum değer x*, her iki fonksiyonu da sağlayacaktır. +
+   f’(x*)=g(x*)=0 +
 Dolayısıyla,
 
 image::2.png[Giriş,width=15%]
 
 İfadesi f(x)’in maksimum ve minimumunu bulmak için bir teknik olarak kullanılabilir. Aynı denklem, f(x) için ikinci derece Taylor serisi yazılarak ve serinin türevi sıfıra eşitlenerek de elde edilebilir. 
+
+*Örnek 1* +
+Newton Yöntemini ve Xo=2.5 ilk tahminini kullanarak f(x)=2* sin(x) - (x**2/10) fonksiyonunun maximumunu bulma işlemlerini gerçekleştiriniz. +
+*NOT:PYTHON DİLİYLE YAZILMIŞTIR. VERSİON:2.7* +
+--------------------------------------------
+from sympy import *
+x = Symbol('x')
+y = Symbol('y')
+tahmin=2.495081551326
+denklem=(2* sin(x) - (x**2/10))
+birinciTurev=denklem.diff(x)
+ikinciTurev=birinciTurev.diff(x)
+i=1
+print "Tahmin Sayisi:    "+"Tahmin Degeri:   "+"Fonksiyon Aldigi Deger:  "
+while i<=9:
+    print "     "+i.__str__()+"             "+tahmin.__str__()+"      "+denklem.subs(x,tahmin).__str__()
+    tahmin = tahmin - (birinciTurev.subs(x, tahmin)) / (ikinciTurev.subs(x, tahmin))
+    i=i+1
+*ÇIKTI* +
+Tahmin Sayisi:    	Tahmin Degeri:   	Fonksiyon Aldigi Deger:  
+     1             		2.49508155133      	0.582267351471577
+     2             		1.00349460310183      1.58600782806794
+     3             		1.46674482756487      1.77404901121016
+     4             		1.42763376475062      1.77572564582236
+     5             		1.42755177920468      1.77572565314742
+     6             		1.42755177876459      1.77572565314742
+     7            		1.42755177876459      1.77572565314742
+     8             		1.42755177876459      1.77572565314742
+     9            		1.42755177876459      1.77572565314742
+
 
